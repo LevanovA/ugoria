@@ -30,13 +30,13 @@ $z-indexes: (
     }
 }
 
-@mixin desktop_1024 {
+@mixin tablets_1024 {
     @media screen and (max-width: 1023px) {
         @content;
     }
 }
 
-@mixin tablets__768 {
+@mixin phones__768 {
     @media screen and (max-width: 767px) {
         @content;
     }
