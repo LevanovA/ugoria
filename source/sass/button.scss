@@ -1,6 +1,6 @@
 .button {
     @include flex-block;
-    width: 214px;
+    width: 250px;
     height: 60px;
 
     font-size: 24px;
@@ -8,23 +8,27 @@
     color: #ffffff;
     text-decoration: none;
 
-    background-color: $c-button-main;
-    border: 2px solid $c-button-main;
-    border-radius: 5px;
+    background-color: $button-main-c;
+    border: 2px solid $border-main-c;
+    border-radius: 10px;
 
     box-sizing: border-box;
     cursor: pointer;
     outline: none;
-    transition: 0.7s;
+    transition: 0.5s;
 
     &:hover {
-        color: $c-button-main;
-        background-color: #ffffff;
+        color: $button-main-c;
+        background-color: $button-hover-c;
     }
 
     &:active {
         opacity: 0.5;
         transition: 0.1s;
+    }
+
+    &:focus {
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2)
     }
 }
 

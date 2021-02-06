@@ -18,31 +18,31 @@ $z-indexes: (
 
 //Медиа запросы для разных ширин экрана
 //Пример использования: @include desktop_1200 {font-size: 20px;}
-@mixin desktop_1366 {
+@mixin before_1366 {
     @media screen and (max-width: 1365px) {
         @content;
     }
 }
 
-@mixin desktop_1200 {
+@mixin before_1200 {
     @media screen and (max-width: 1199px) {
         @content;
     }
 }
 
-@mixin tablets_1024 {
+@mixin before_1024 {
     @media screen and (max-width: 1023px) {
         @content;
     }
 }
 
-@mixin phones__768 {
+@mixin before__768 {
     @media screen and (max-width: 767px) {
         @content;
     }
 }
 
-@mixin phones__480 {
+@mixin before__480 {
     @media screen and (max-width: 479px) {
         @content;
     }
