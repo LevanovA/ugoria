@@ -48,18 +48,6 @@ $z-indexes: (
     }
 }
 
-@mixin flex-block($jus-con: center, $al-it: center) {
-    display: flex;
-    justify-content: $jus-con;
-    align-items: $al-it;
-}
-
-@mixin pseudo($display: block, $pos: absolute, $content: '') {
-    content: $content;
-    display: $display;
-    position: $pos;
-}
-
 //Смещение элемента
 //Пример использования: .block {@include offset}
 @mixin offset($top: 50%, $left: 50%, $right: auto, $bottom: auto, $trans-top: -50%, $trans-left: -50%, $rotate: 0) {
