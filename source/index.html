@@ -12,37 +12,483 @@
     <div style="display: none">
         <include src="build/img/sprite_auto.svg"></include>
     </div>
-    <header class="header">
-        <div class="wrapper"></div>
-    </header>
-    <section class="main">
-        <h2 class="main__title">
-            Все получилось!!! Удачного кодинга :=)) Поехали
-        </h2>
-        <div class="icon-box">
-            <svg class="icon-address" width="24" height="24">
-                <use xlink:href="#icon-address"></use>
-            </svg>
-        </div>
-        <div class="button-box">
-            <button class="button button--modal-open" type="button">Показать</button>
-        </div>
-        <div>
-            <a class="button" href="#">Продолжить</a>
-        </div>
-        <div class="slider">
-            <div class="slider-item">
-                <img src="img/img1.jpg" alt="">
+    <div class="grid">
+        <section class="banner">
+            <header class="header">
+                <div class="wrapper wrapper--banner">
+                    <div class="header__box">
+                        <a href="/" class="header__logo-link">
+                            <svg class="header__logo" width="231" height="36">
+                                <use xlink:href="#icon-logo-ugoria"></use>
+                            </svg>
+                        </a>
+                        <div class="header__flex">
+                            <ul class="header__list">
+                                <li class="header__item">
+                                    <a href="#" class="header__link">
+                                        <svg class="header__ion" width="20" height="20">
+                                            <use xlink:href="#icon-user-profile"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="header__item">
+                                    <button type="button" class="header__button">
+                                        <svg class="header__ion" width="22" height="15">
+                                            <use xlink:href="#icon-visually-impaired"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="header__item">
+                                    <button type="button" class="header__button">
+                                        <svg class="header__ion" width="23" height="22">
+                                            <use xlink:href="#icon-search"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="banner__content">
+                <div class="wrapper wrapper--full-height wrapper--banner">
+                    <div class="banner__flex">
+                        <div class="banner__el banner__el--left">
+                            <div class="banner__program-name">
+                                Ю-Атлет
+                            </div>
+                            <h2 class="banner__title">
+                                Спортивное страхование по подписке
+                            </h2>
+                            <p class="banner__description">
+                                Организация и лечение спортивных травм «под ключ»
+                            </p>
+                            <div class="banner__animate">
+                                <div class="banner__info">
+                                    <div class="banner__info-el">
+                                        <div class="banner__info-name">
+                                            Страховая защита
+                                        </div>
+                                        <div class="banner__info-number">
+                                            до&nbsp;300&nbsp;000&nbsp;&#8381;
+                                        </div>
+                                    </div>
+                                    <div class="banner__info-el">
+                                        <div class="banner__info-name">
+                                            Срок страхования
+                                        </div>
+                                        <div class="banner__info-number">
+                                            1&nbsp;год
+                                        </div>
+                                    </div>
+                                    <div class="banner__info-el">
+                                        <div class="banner__info-name">
+                                            Стоимость программы
+                                        </div>
+                                        <div class="banner__info-number">
+                                            1750&nbsp;&#8381;&nbsp;в&nbsp;мес.
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="button button--banner banner__row">
+                                    Купить
+                                </button>
+                                <button type="button" class="banner__heals">
+                                    <span class="banner__heals-text">Действительно лечит</span>
+                                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="18" cy="18" r="17" stroke="white" stroke-width="2"/>
+                                        <path d="M16 18H30M30 18L26 14M30 18L26 22" stroke="white" stroke-width="2"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="banner__el banner__el--right">
+                            <img src="img/banner-img1.png" alt="Картинка продутка" class="banner__img">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="slider-item">
-                <img src="img/img2.jpg" alt="">
-            </div>
-            <div class="slider-item">
-                <img src="img/img3.jpg" alt="">
-            </div>
-        </div>
-    </section>
-    <footer class="footer"></footer>
+        </section>
+        <section class="main">
+            <section class="ref">
+               <div class="wrapper">
+                   <div class="ref__slider">
+                       <div class="ref__slide">
+                           <div class="ref__box ref__box--active">
+                               Что включено
+                           </div>
+                       </div>
+                       <div class="ref__slide ref__slide--center">
+                           <div class="ref__box">
+                               Параметры программы
+                           </div>
+                       </div>
+                       <div class="ref__slide ref__slide--center">
+                           <div class="ref__box">
+                               Приобрести полис
+                           </div>
+                       </div>
+                       <div class="ref__slide ref__slide--right">
+                           <div class="ref__box">
+                               Вопрос-Ответ
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </section>
+            <section class="risks">
+                <div class="wrapper">
+                    <h3 class="title">Что включено</h3>
+                    <div class="risks__list">
+                        <div class="risks__item">
+                            <div class="risks__container">
+                                <button class="risks__button risks__button--plus">
+                                    <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="27" cy="27" r="25.5" stroke="#00A76D" stroke-width="3"/>
+                                        <path d="M37 28.8265H28.875V37H25.125V28.8265H17V25.2192H25.125V17H28.875V25.2192H37V28.8265Z" fill="#00A76D"/>
+                                    </svg>
+                                </button>
+                                <div class="risks__circle">
+                                    <svg class="header__icon" width="60" height="60">
+                                        <use xlink:href="#icon-foot"></use>
+                                    </svg>
+                                </div>
+                                <div class="risks__text">
+                                    Лечение спортивных травм в&nbsp;современных клиниках
+                                </div>
+                                <div class="risks__info">
+                                    <button class="risks__button risks__button--minus">
+                                        <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="27" cy="27" r="25.5" stroke="white" stroke-width="3"/>
+                                            <path d="M37 28.8265H28.875H25.125H17V25.2192H25.125H28.875H37V28.8265Z" fill="white"/>
+                                        </svg>
+                                    </button>
+                                    <div class="risks__info-top">
+                                        <h4 class="risks__info-title">
+                                            Лечение спортивных травм в&nbsp;современных клиниках
+                                        </h4>
+                                    </div>
+                                    <div class="risks__info-subtitle">
+                                        Включено:
+                                    </div>
+                                    <ul class="risks__info-list">
+                                        <li class="risks__info-item">
+                                            лечение двух спортивных травм (легкой степени) без ограничения по сумме трат на лечение;
+                                        </li>
+                                        <li class="risks__info-item">
+                                            лечение одной средней или тяжелой спортивной травмы – в пределах 300 000 рублей;
+                                        </li>
+                                        <li class="risks__info-item">
+                                            консультация специалиста и лечение в клинике по выбору застрахованного лица из списка предложенных;
+                                        </li>
+                                        <li class="risks__info-item">
+                                            24/7/365 колл-центр и запись на прием.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="risks__item">
+                            <div class="risks__container">
+                                <button class="risks__button risks__button--plus">
+                                    <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="27" cy="27" r="25.5" stroke="#00A76D" stroke-width="3"/>
+                                        <path d="M37 28.8265H28.875V37H25.125V28.8265H17V25.2192H25.125V17H28.875V25.2192H37V28.8265Z" fill="#00A76D"/>
+                                    </svg>
+                                </button>
+                                <div class="risks__circle">
+                                    <svg class="header__icon" width="60" height="60">
+                                        <use xlink:href="#icon-money"></use>
+                                    </svg>
+                                </div>
+                                <div class="risks__text">
+                                    Компенсация трат на лекарства
+                                </div>
+                                <div class="risks__info">
+                                    <button class="risks__button risks__button--minus">
+                                        <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="27" cy="27" r="25.5" stroke="white" stroke-width="3"/>
+                                            <path d="M37 28.8265H28.875H25.125H17V25.2192H25.125H28.875H37V28.8265Z" fill="white"/>
+                                        </svg>
+                                    </button>
+                                    <div class="risks__info-top">
+                                        <h4 class="risks__info-title">
+                                            Лечение спортивных травм в&nbsp;современных клиниках
+                                        </h4>
+                                    </div>
+                                    <div class="risks__info-subtitle">
+                                        Включено:
+                                    </div>
+                                    <ul class="risks__info-list">
+                                        <li class="risks__info-item">
+                                            лечение двух спортивных травм (легкой степени) без ограничения по сумме трат на лечение;
+                                        </li>
+                                        <li class="risks__info-item">
+                                            лечение одной средней или тяжелой спортивной травмы – в пределах 300 000 рублей;
+                                        </li>
+                                        <li class="risks__info-item">
+                                            консультация специалиста и лечение в клинике по выбору застрахованного лица из списка предложенных;
+                                        </li>
+                                        <li class="risks__info-item">
+                                            24/7/365 колл-центр и запись на прием.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="risks__item">
+                            <div class="risks__container">
+                                <button class="risks__button risks__button--plus">
+                                    <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="27" cy="27" r="25.5" stroke="#00A76D" stroke-width="3"/>
+                                        <path d="M37 28.8265H28.875V37H25.125V28.8265H17V25.2192H25.125V17H28.875V25.2192H37V28.8265Z" fill="#00A76D"/>
+                                    </svg>
+                                </button>
+                                <div class="risks__circle">
+                                    <svg class="header__icon" width="60" height="60">
+                                        <use xlink:href="#icon-runner"></use>
+                                    </svg>
+                                </div>
+                                <div class="risks__text">
+                                    Справка (допуск) к соревнованиям
+                                </div>
+                                <div class="risks__info risks__info--left">
+                                    <button class="risks__button risks__button--minus">
+                                        <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="27" cy="27" r="25.5" stroke="white" stroke-width="3"/>
+                                            <path d="M37 28.8265H28.875H25.125H17V25.2192H25.125H28.875H37V28.8265Z" fill="white"/>
+                                        </svg>
+                                    </button>
+                                    <div class="risks__info-top">
+                                        <h4 class="risks__info-title">
+                                            Лечение спортивных травм в&nbsp;современных клиниках
+                                        </h4>
+                                    </div>
+                                    <div class="risks__info-subtitle">
+                                        Включено:
+                                    </div>
+                                    <ul class="risks__info-list">
+                                        <li class="risks__info-item">
+                                            лечение двух спортивных травм (легкой степени) без ограничения по сумме трат на лечение;
+                                        </li>
+                                        <li class="risks__info-item">
+                                            лечение одной средней или тяжелой спортивной травмы – в пределах 300 000 рублей;
+                                        </li>
+                                        <li class="risks__info-item">
+                                            консультация специалиста и лечение в клинике по выбору застрахованного лица из списка предложенных;
+                                        </li>
+                                        <li class="risks__info-item">
+                                            24/7/365 колл-центр и запись на прием.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="risks__item">
+                            <div class="risks__container">
+                                <button class="risks__button risks__button--plus">
+                                    <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="27" cy="27" r="25.5" stroke="#00A76D" stroke-width="3"/>
+                                        <path d="M37 28.8265H28.875V37H25.125V28.8265H17V25.2192H25.125V17H28.875V25.2192H37V28.8265Z" fill="#00A76D"/>
+                                    </svg>
+                                </button>
+                                <div class="risks__circle">
+                                    <svg class="header__icon" width="60" height="46">
+                                        <use xlink:href="#icon-food"></use>
+                                    </svg>
+                                </div>
+                                <div class="risks__text">
+                                    Подбор плана питания и&nbsp;витаминов
+                                </div>
+                                <div class="risks__info">
+                                    <button class="risks__button risks__button--minus">
+                                        <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="27" cy="27" r="25.5" stroke="white" stroke-width="3"/>
+                                            <path d="M37 28.8265H28.875H25.125H17V25.2192H25.125H28.875H37V28.8265Z" fill="white"/>
+                                        </svg>
+                                    </button>
+                                    <div class="risks__info-top">
+                                        <h4 class="risks__info-title">
+                                            Лечение спортивных травм в&nbsp;современных клиниках
+                                        </h4>
+                                    </div>
+                                    <div class="risks__info-subtitle">
+                                        Включено:
+                                    </div>
+                                    <ul class="risks__info-list">
+                                        <li class="risks__info-item">
+                                            лечение двух спортивных травм (легкой степени) без ограничения по сумме трат на лечение;
+                                        </li>
+                                        <li class="risks__info-item">
+                                            лечение одной средней или тяжелой спортивной травмы – в пределах 300 000 рублей;
+                                        </li>
+                                        <li class="risks__info-item">
+                                            консультация специалиста и лечение в клинике по выбору застрахованного лица из списка предложенных;
+                                        </li>
+                                        <li class="risks__info-item">
+                                            24/7/365 колл-центр и запись на прием.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="risks__item">
+                            <div class="risks__container">
+                                <button class="risks__button risks__button--plus">
+                                    <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="27" cy="27" r="25.5" stroke="#00A76D" stroke-width="3"/>
+                                        <path d="M37 28.8265H28.875V37H25.125V28.8265H17V25.2192H25.125V17H28.875V25.2192H37V28.8265Z" fill="#00A76D"/>
+                                    </svg>
+                                </button>
+                                <div class="risks__circle">
+                                    <svg class="header__icon" width="60" height="60">
+                                        <use xlink:href="#icon-telemedicine"></use>
+                                    </svg>
+                                </div>
+                                <div class="risks__text">
+                                    Телемедицинские консультации и&nbsp;медицинский ассистанс
+                                </div>
+                                <div class="risks__info">
+                                    <button class="risks__button risks__button--minus">
+                                        <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="27" cy="27" r="25.5" stroke="white" stroke-width="3"/>
+                                            <path d="M37 28.8265H28.875H25.125H17V25.2192H25.125H28.875H37V28.8265Z" fill="white"/>
+                                        </svg>
+                                    </button>
+                                    <div class="risks__info-top">
+                                        <h4 class="risks__info-title">
+                                            Лечение спортивных травм в&nbsp;современных клиниках
+                                        </h4>
+                                    </div>
+                                    <div class="risks__info-subtitle">
+                                        Включено:
+                                    </div>
+                                    <ul class="risks__info-list">
+                                        <li class="risks__info-item">
+                                            лечение двух спортивных травм (легкой степени) без ограничения по сумме трат на лечение;
+                                        </li>
+                                        <li class="risks__info-item">
+                                            лечение одной средней или тяжелой спортивной травмы – в пределах 300 000 рублей;
+                                        </li>
+                                        <li class="risks__info-item">
+                                            консультация специалиста и лечение в клинике по выбору застрахованного лица из списка предложенных;
+                                        </li>
+                                        <li class="risks__info-item">
+                                            24/7/365 колл-центр и запись на прием.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="risks__item">
+                            <div class="risks__container">
+                                <button class="risks__button risks__button--plus">
+                                    <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="27" cy="27" r="25.5" stroke="#00A76D" stroke-width="3"/>
+                                        <path d="M37 28.8265H28.875V37H25.125V28.8265H17V25.2192H25.125V17H28.875V25.2192H37V28.8265Z" fill="#00A76D"/>
+                                    </svg>
+                                </button>
+                                <div class="risks__circle">
+                                    <svg class="header__icon" width="60" height="60">
+                                        <use xlink:href="#icon-psychologist"></use>
+                                    </svg>
+                                </div>
+                                <div class="risks__text">
+                                    Дистанционные консультации психологов
+                                </div>
+                                <div class="risks__info risks__info--left">
+                                    <button class="risks__button risks__button--minus">
+                                        <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="27" cy="27" r="25.5" stroke="white" stroke-width="3"/>
+                                            <path d="M37 28.8265H28.875H25.125H17V25.2192H25.125H28.875H37V28.8265Z" fill="white"/>
+                                        </svg>
+                                    </button>
+                                    <div class="risks__info-top">
+                                        <h4 class="risks__info-title">
+                                            Лечение спортивных травм в&nbsp;современных клиниках
+                                        </h4>
+                                    </div>
+                                    <div class="risks__info-subtitle">
+                                        Включено:
+                                    </div>
+                                    <ul class="risks__info-list">
+                                        <li class="risks__info-item">
+                                            лечение двух спортивных травм (легкой степени) без ограничения по сумме трат на лечение;
+                                        </li>
+                                        <li class="risks__info-item">
+                                            лечение одной средней или тяжелой спортивной травмы – в пределах 300 000 рублей;
+                                        </li>
+                                        <li class="risks__info-item">
+                                            консультация специалиста и лечение в клинике по выбору застрахованного лица из списка предложенных;
+                                        </li>
+                                        <li class="risks__info-item">
+                                            24/7/365 колл-центр и запись на прием.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="risks__item risks__item--all">
+                            <div class="risks__container risks__container--all">
+                                <button class="risks__button risks__button--plus">
+                                    <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="27" cy="27" r="25.5" stroke="#00A76D" stroke-width="3"/>
+                                        <path d="M37 28.8265H28.875V37H25.125V28.8265H17V25.2192H25.125V17H28.875V25.2192H37V28.8265Z" fill="#00A76D"/>
+                                    </svg>
+                                </button>
+                                <div class="risks__circle">
+                                    <svg class="header__icon" width="60" height="60">
+                                        <use xlink:href="#icon-psychologist"></use>
+                                    </svg>
+                                </div>
+                                <div class="risks__box">
+                                    <div class="risks__title">
+                                        Дополнительная опция
+                                    </div>
+                                    <div class="risks__text">
+                                        Дистанционные консультации психологов
+                                    </div>
+                                </div>
+                                <div class="risks__info risks__info--top">
+                                    <button class="risks__button risks__button--minus">
+                                        <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="27" cy="27" r="25.5" stroke="white" stroke-width="3"/>
+                                            <path d="M37 28.8265H28.875H25.125H17V25.2192H25.125H28.875H37V28.8265Z" fill="white"/>
+                                        </svg>
+                                    </button>
+                                    <div class="risks__info-top">
+                                        <h4 class="risks__info-title">
+                                            Лечение спортивных травм в&nbsp;современных клиниках
+                                        </h4>
+                                    </div>
+                                    <div class="risks__info-subtitle">
+                                        Включено:
+                                    </div>
+                                    <ul class="risks__info-list">
+                                        <li class="risks__info-item">
+                                            лечение двух спортивных травм (легкой степени) без ограничения по сумме трат на лечение;
+                                        </li>
+                                        <li class="risks__info-item">
+                                            лечение одной средней или тяжелой спортивной травмы – в пределах 300 000 рублей;
+                                        </li>
+                                        <li class="risks__info-item">
+                                            консультация специалиста и лечение в клинике по выбору застрахованного лица из списка предложенных;
+                                        </li>
+                                        <li class="risks__info-item">
+                                            24/7/365 колл-центр и запись на прием.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <footer class="footer">
+            футер сайта
+        </footer>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/vendor.js"></script>
     <script src="js/main.js"></script>
