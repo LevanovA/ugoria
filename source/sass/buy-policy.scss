@@ -1,0 +1,25 @@
+.buy-policy {
+    margin-bottom: 65px;
+    padding: 20px 0;
+    background-color: #F7F8FA;
+
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__tel {
+        font-family: $font-main;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 31px;
+        color: $text-main-c;
+        text-decoration: none;
+        transition: 0.5s;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}

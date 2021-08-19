@@ -1,0 +1,17 @@
+.cutoff {
+    height: 1px;
+    margin-bottom: 40px;
+    background-color: #DFE5F2;
+    border: none;
+
+    &--parameters {
+        background-color: rgba(152, 179, 229, 0.4);
+    }
+
+    &--no-mobile {
+
+        @include before__768 {
+            display: none;
+        }
+    }
+}

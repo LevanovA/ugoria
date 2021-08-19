@@ -1,0 +1,38 @@
+.download-documents {
+
+    &__link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    &__icon {
+        flex-shrink: 0;
+        margin-right: 23px;
+    }
+
+    &__name {
+        margin-bottom: 5px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #002A54;
+        border-bottom: 1px solid #002A54;
+        transition: 0.5s;
+
+        @include before__768 {
+            font-size: 12px;
+            line-height: 19px;
+        }
+
+        &:hover {
+            border-bottom: 1px solid transparent;
+        }
+    }
+
+    &__date {
+        font-size: 14px;
+        line-height: 21px;
+        color: $text-secondary-c;
+    }
+}

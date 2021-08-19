@@ -1,14 +1,18 @@
 .banner {
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
     background-color: $main-c;
 
     &__content {
-        height: calc(100% - 108px);
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
     }
 
     &__flex {
         display: flex;
-        height: 100%;
+        flex-grow: 1;
     }
 
     &__el {
@@ -16,9 +20,14 @@
 
         &--left {
             padding-top: 85px;
+
+            @include before_1366 {
+                padding-top: 45px;
+            }
         }
 
         &--right {
+            position: relative;
             display: flex;
             align-items: flex-end;
             justify-content: center;
@@ -31,6 +40,11 @@
         line-height: 36px;
         letter-spacing: -1px;
         color: rgba(255, 255, 255, 0.8);
+
+        @include before_1366 {
+            font-size: 26px;
+            line-height: 32px;
+        }
     }
 
     &__title {
@@ -40,6 +54,11 @@
         line-height: 73px;
         letter-spacing: -1px;
         color: #FFFFFF;
+
+        @include before_1366 {
+            font-size: 30px;
+            line-height: 40px;
+        }
     }
 
     &__description {
@@ -48,12 +67,29 @@
         font-size: 20px;
         line-height: 26px;
         color: #FFFFFF;
+
+        @include before_1366 {
+            margin-bottom: 44px;
+        }
     }
 
     &__info {
         display: flex;
         justify-content: space-between;
         margin-bottom: 72px;
+
+        @include before_1366 {
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__info-el {
+
+        @include before_1366 {
+            width: 50%;
+            margin-bottom: 20px;
+        }
     }
 
     &__info-name {
@@ -66,8 +102,8 @@
 
     &__info-number {
         font-weight: bold;
-        font-size: 32px;
-        line-height: 42px;
+        font-size: 28px;
+        line-height: 38px;
         color: #FFFFFF;
     }
 
@@ -79,6 +115,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-bottom: 40px;
         padding: 0;
         border: none;
         background-color: transparent;
@@ -94,6 +131,12 @@
     }
 
     &__img {
-        height: 95%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: bottom;
     }
 }

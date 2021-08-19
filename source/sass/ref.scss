@@ -15,9 +15,12 @@
     &__box {
         position: relative;
         padding-bottom: 24px;
+        font-family: $font-main;
         font-weight: bold;
         font-size: 18px;
         line-height: 23px;
+        color: $text-main-c;
+        text-decoration: none;
 
         &:before {
             content: "";

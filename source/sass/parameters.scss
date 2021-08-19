@@ -1,0 +1,52 @@
+.parameters {
+    margin-bottom: 100px;
+    padding: 60px 0 80px;
+    background-color: $main-c;
+
+    &__flex {
+        display: flex;
+    }
+
+    &__el {
+        width: 50%;
+    }
+
+    &__title {
+        margin-bottom: 24px;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 36px;
+        color: #ffffff;
+    }
+
+    &__subtitle {
+        margin-bottom: 12px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 29px;
+        color: #ffffff;
+
+        &--24 {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__block {
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 21px;
+        color: #98B3E5;
+        margin-bottom: 10px;
+
+        &--24 {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__row {
+        margin-bottom: 10px;
+    }
+}

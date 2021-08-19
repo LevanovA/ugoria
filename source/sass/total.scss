@@ -1,0 +1,57 @@
+.total {
+    max-width: 496px;
+    margin-left: auto;
+    padding: 30px 40px;
+    background-color: #ffffff;
+    border-radius: 2px;
+
+    &__title {
+        margin-bottom: 40px;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    &__list {
+        margin-bottom: 40px;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 25px;
+        border-bottom: 1px solid #DFE5F2;
+
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__name {
+        margin-right: 20px;
+        font-size: 14px;
+        line-height: 17px;
+
+        &--coast {
+            max-width: 135px;
+        }
+    }
+
+    &__value {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 24px;
+
+        &--big {
+            font-size: 28px;
+            line-height: 36px;
+        }
+    }
+
+    &__coast {
+        margin-bottom: 56px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

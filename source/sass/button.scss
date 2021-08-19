@@ -35,6 +35,15 @@
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2)
     }
 
+    &--second-c {
+        background-color: $main-c;
+        border: 1px solid $main-c;
+
+        &:hover {
+            color: $main-c;
+        }
+    }
+
     &--banner {
         width: 240px;
         font-size: 16px;
@@ -48,6 +57,23 @@
             color: #ffffff;
             background-color: $main-c;
             border: 1px solid #ffffff;
+        }
+    }
+
+    &--buy-policy {
+        width: 248px;
+        height: 48px;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 21px;
+        color: $main-c;
+        background-color: transparent;
+        border: 1px solid $main-c;
+        text-transform: none;
+
+        &:hover {
+            color: #ffffff;
+            background-color: $main-c;
         }
     }
 }

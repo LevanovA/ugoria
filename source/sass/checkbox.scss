@@ -1,0 +1,114 @@
+.checkbox {
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+
+        @include before__480 {
+            flex-direction: column;
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-shrink: 0;
+        align-items: center;
+
+        &--half {
+            width: 50%;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__window {
+        display: flex;
+        flex-shrink: 0;
+        align-items: center;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+        margin-right: 12px;
+        margin-top: 3px;
+        background: transparent;
+        border: 1px solid #ffffff;
+        border-radius: 1px;
+    }
+
+    &__icon-mark {
+        width: 10px;
+        height: 10px;
+        background-color: #ffffff;
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    &__name {
+        display: flex;
+        align-items: flex-start;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 29px;
+        color: #ffffff;
+        cursor: pointer;
+
+        &--info {
+            margin-right: 12px;
+        }
+    }
+
+    &__text {
+
+        &--16 {
+            font-size: 16px;
+        }
+    }
+
+    &__input:checked + .checkbox__name {
+        .checkbox__icon-mark {
+            opacity: 1;
+        }
+    }
+
+    &__link {
+        color: $main-c;
+        text-decoration: none;
+        border-bottom: 1px solid $main-c;
+        transition: 0.5s;
+
+        &:hover {
+            border-bottom: 1px solid transparent;
+        }
+    }
+
+    //&__error-message {
+    //    display: none;
+    //    margin-top: 5px;
+    //    font-size: 12px;
+    //    line-height: 16px;
+    //    letter-spacing: 0.04em;
+    //    color: red;
+    //}
+
+    //&--calculator {
+    //
+    //    .checkbox__window {
+    //        background: #3683EB;
+    //        border: 1px solid #3683EB;
+    //    }
+    //
+    //    .checkbox__icon-mark {
+    //        fill: #ffffff;
+    //    }
+    //
+    //    .checkbox__name {
+    //        color: #FFFFFF;
+    //    }
+    //}
+    //
+    //&--error {
+    //
+    //    .checkbox__window {
+    //        border: 1px solid red;
+    //    }
+    //}
+}
