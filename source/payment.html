@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Югория Жизнь страховая компания</title>
+    <meta name="description" content="Югория Жизнь страховая компания"/>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <div style="display: none">
+        <include src="build/img/sprite_auto.svg"></include>
+    </div>
+    <div class="grid">
+        <section class="header-simple">
+            <div class="wrapper wrapper--payment">
+                <div class="header-simple__flex">
+                    <svg class="header-simple__logo" width="230" height="30">
+                        <use xlink:href="#icon-logo-ugoria-green"></use>
+                    </svg>
+                    <a href="tel:88007700700" class="header-simple__tel">8 800 770 07 00</a>
+                </div>
+            </div>
+        </section>
+        <section class="main">
+            <section class="payment">
+                <div class="wrapper wrapper--payment">
+                    <a href="#" class="button-back button-back--mb25">
+                        <svg class="button-back__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.88">
+                                <path d="M13.3333 11.9999L3.99992 11.9999M3.99992 11.9999L6.66659 14.6666M3.99992 11.9999L6.66659 9.33325" stroke="#00A76D" stroke-width="1.33333"/>
+                                <rect x="23.3333" y="23.3333" width="22.6667" height="22.6667" rx="11.3333" transform="rotate(-180 23.3333 23.3333)" stroke="#00A76D" stroke-width="1.33333"/>
+                            </g>
+                        </svg>
+                        <span class="button-back__text">Назад</span>
+                    </a>
+                    <h2 class="title">
+                        Оформление полиса
+                    </h2>
+                    <form class="form">
+                        <div class="form__flex">
+                            <div class="form__el">
+                                <div class="input-box">
+                                    <label class="input-box__wrap">
+                                        <input
+                                            type="text"
+                                            class="input-box__input"
+                                            name="fio"
+                                            required
+                                            disabled
+                                        >
+                                        <div class="input-box__label">ФИО</div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form__el">
+                                <div class="input-box">
+                                    <label class="input-box__wrap">
+                                        <input
+                                            type="text"
+                                            class="input-box__input input-box__input--birthday"
+                                            name="birthday"
+                                            required
+                                            disabled
+                                        >
+                                        <div class="input-box__label">День рождение</div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form__el">
+                                <div class="input-box">
+                                    <label class="input-box__wrap">
+                                        <input
+                                            type="text"
+                                            class="input-box__input"
+                                            name="place"
+                                            required
+                                            disabled
+                                        >
+                                        <div class="input-box__label">Место рождения</div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form__el">
+                                <div class="input-box">
+                                    <label class="input-box__wrap">
+                                        <input
+                                            type="text"
+                                            class="input-box__input"
+                                            name="sex"
+                                            required
+                                            disabled
+                                        >
+                                        <div class="input-box__label">Пол</div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form__el">
+                                <div class="input-box">
+                                    <label class="input-box__wrap">
+                                        <input
+                                            type="text"
+                                            class="input-box__input input-box__input--passport"
+                                            name="passport"
+                                            required
+                                            disabled
+                                        >
+                                        <div class="input-box__label">Серия и номер паспорта</div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form__el">
+                                <div class="input-box">
+                                    <label>
+                                        <input
+                                            type="text"
+                                            class="input-box__input input-box__input--issued"
+                                            name="issued"
+                                            required
+                                            disabled
+                                        >
+                                        <div class="input-box__label">Дата выдачи</div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form__el">
+                                <div class="input-box">
+                                    <label class="input-box__wrap">
+                                        <input
+                                            type="text"
+                                            class="input-box__input input-box__input-department"
+                                            name="department"
+                                            required
+                                            disabled
+                                        >
+                                        <div class="input-box__label">Код подразделения</div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form__el">
+                                <div class="input-box">
+                                    <label class="input-box__wrap">
+                                        <input
+                                            type="text"
+                                            class="input-box__input"
+                                            name="subdivision"
+                                            required
+                                            disabled
+                                        >
+                                        <div class="input-box__label">Кем выдан</div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form__el">
+                                <div class="input-box">
+                                    <label class="input-box__wrap">
+                                        <input
+                                            type="text"
+                                            class="input-box__input input-box__input--phone"
+                                            name="phone"
+                                            required
+                                        >
+                                        <div class="input-box__label">Телефон</div>
+                                    </label>
+                                    <div class="input-box__description">
+                                        На этот телефон будет отправлено смс для подтверждения.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form__el">
+                                <div class="input-box">
+                                    <label class="input-box__wrap">
+                                        <input
+                                            type="text"
+                                            class="input-box__input input-box__input--email"
+                                            name="email"
+                                            required
+                                        >
+                                        <div class="input-box__label">E-mail</div>
+                                    </label>
+                                    <div class="input-box__description">
+                                        На этот телефон будет отправлено смс для подтверждения.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__flex">
+                            <div class="form__el form__el--apply">
+                                <div class="input-box">
+                                    <label class="input-box__wrap">
+                                        <input
+                                            type="text"
+                                            class="input-box__input input-box__input--code"
+                                            name="code"
+                                            required
+                                        >
+                                        <div class="input-box__label">Код подтверждения</div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form__el form__el--button-apply">
+                                <button class="button-apply">
+                                    <span class="button-apply__text">Применить</span>
+                                </button>
+                            </div>
+                        </div>
+                        <h3 class="form__subtitle">
+                            У вас есть промокод?
+                        </h3>
+                        <div class="form__flex form__flex--mb60">
+                            <div class="form__el form__el--apply">
+                                <div class="input-box">
+                                    <label class="input-box__wrap">
+                                        <input
+                                            type="text"
+                                            class="input-box__input"
+                                            name="promocode"
+                                            required
+                                        >
+                                        <div class="input-box__label">Введите промокод</div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form__el form__el--button-apply">
+                                <button class="button-apply">
+                                    <span class="button-apply__text">Применить</span>
+                                </button>
+                            </div>
+                        </div>
+                        <hr class="cutoff">
+                        <h3 class="form__subtitle">
+                            Параметры программы
+                        </h3>
+                        <div class="form__info">
+                            <div class="form__info-el">
+                                <div class="form__info-name">
+                                    Срок страхования
+                                </div>
+                                <div class="form__info-number">
+                                    1&nbsp;год
+                                </div>
+                            </div>
+                            <div class="form__info-el">
+                                <div class="form__info-name">
+                                    Страховая защита
+                                </div>
+                                <div class="form__info-number">
+                                    до&nbsp;300&nbsp;000&nbsp;&#8381;
+                                </div>
+                            </div>
+                            <div class="form__info-el">
+                                <div class="form__info-name">
+                                    Ежемесячный платеж
+                                </div>
+                                <div class="form__info-number">
+                                    1750&nbsp;&#8381;&nbsp;в&nbsp;мес.
+                                </div>
+                            </div>
+                            <div class="form__info-el">
+                                <div class="form__info-name">
+                                    Общая сумма платежей за год
+                                </div>
+                                <div class="form__info-number">
+                                    15&nbsp;000&nbsp;&#8381;&nbsp;в&nbsp;мес.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="checkbox checkbox--payment form__row">
+                            <div class="checkbox__item">
+                                <input
+                                    data-required="false"
+                                    id="agreement"
+                                    type="checkbox"
+                                    class="checkbox__input visually-hidden"
+                                    name="agreement"
+                                    checked
+                                    required
+                                >
+                                <label for="agreement" class="checkbox__name checkbox__name--info">
+                                    <span class="checkbox__window">
+                                        <div class="checkbox__icon-mark"></div>
+                                    </span>
+                                    <span class="checkbox__text">
+                                        С положениями
+                                        <a href="#" class="checkbox__link" target="_blank" rel="noopener noreferrer">правил, декларацией и политикой обработки персональных данных</a> ознакомлен и согласен
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                        <button class="button button--payment form__mb100">Оформить</button>
+                        <div class="form__note">
+                            <div class="form__note-text">
+                                Не удается купить полис? Отправьте скриншот с ошибкой или напишите на <a class="form__note-link" href="mailto:" target="_blank" rel="noopener noreferrer">support@ulife.ru</a> и мы решим все ваши проблемы!
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </section>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

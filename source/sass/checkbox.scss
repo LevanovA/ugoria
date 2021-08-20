@@ -85,6 +85,29 @@
         }
     }
 
+    &--payment {
+        max-width: 500px;
+
+        .checkbox__window {
+            border: 1px solid #DFE5F2;
+        }
+
+        .checkbox__icon-mark {
+            background-color: $second-c;
+        }
+
+        .checkbox__name {
+            font-size: 14px;
+            line-height: 22px;
+            color: $text-main-c;
+        }
+
+        .checkbox__link {
+            color: $second-c;
+            border-bottom: 1px solid $second-c;
+        }
+    }
+
     //&__error-message {
     //    display: none;
     //    margin-top: 5px;
@@ -92,22 +115,6 @@
     //    line-height: 16px;
     //    letter-spacing: 0.04em;
     //    color: red;
-    //}
-
-    //&--calculator {
-    //
-    //    .checkbox__window {
-    //        background: #3683EB;
-    //        border: 1px solid #3683EB;
-    //    }
-    //
-    //    .checkbox__icon-mark {
-    //        fill: #ffffff;
-    //    }
-    //
-    //    .checkbox__name {
-    //        color: #FFFFFF;
-    //    }
     //}
     //
     //&--error {

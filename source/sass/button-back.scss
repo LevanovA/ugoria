@@ -1,0 +1,26 @@
+.button-back {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    text-decoration: none;
+
+    &--mb25 {
+        margin-bottom: 25px;
+    }
+
+    &__icon {
+        margin-right: 12px;
+    }
+
+    &__text {
+        font-family: $font-main;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        color: $text-main-c;
+    }
+}

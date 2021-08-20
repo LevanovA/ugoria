@@ -1,0 +1,67 @@
+.input-box {
+    position: relative;
+
+    &__wrap {
+        position: relative;
+        display: block;
+    }
+
+    &__label {
+        position: absolute;
+        top: calc(50% + 2px);
+        padding-left: 24px;
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: 0.04em;
+        color: #828282;
+        transform: translate(0, -50%);
+        transition: 0.3s;
+
+        @include before__768 {
+            font-size: 14px;
+            line-height: 14px;
+        }
+    }
+
+    &__input {
+        width: 100%;
+        padding: 30px 24px 15px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: 0.04em;
+        border: 1px solid #DFE5F2;
+        outline: none;
+
+        @include before__768 {
+            padding: 20px 24px 10px;
+            font-size: 14px;
+            line-height: 14px;
+        }
+
+        &:focus + .input-box__label,
+        //&:hover + .input-box__label,
+        &:valid + .input-box__label {
+            font-size: 12px;
+            top: 8px;
+            transform: translate(0, 0);
+
+            @include before__768 {
+                font-size: 10px;
+            }
+        }
+    }
+
+    &__description {
+        margin-top: 16px;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.04em;
+        color: #828282;
+
+        @include before__768 {
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+}
