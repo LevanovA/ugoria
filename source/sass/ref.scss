@@ -6,10 +6,18 @@
         display: flex;
         justify-content: space-between;
         border-bottom: 7px solid #F7F8FA;
+
+        @include before_1024 {
+            flex-wrap: wrap;
+        }
     }
 
     &__slide {
         display: flex;
+
+        @include before_1024 {
+            width: 50%;
+        }
     }
 
     &__box {

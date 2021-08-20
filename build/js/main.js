@@ -67,6 +67,8 @@ $(document).ready(function(){
 $(document).ready(function(){
     'use strict'
 
+    const windowWidth = window.innerWidth
+
     //Прокрутка до блока с указанным id в ссылке
     $('.risks__button--plus').on('click', function () {
         $('.risks__info').removeClass('risks__info--active')

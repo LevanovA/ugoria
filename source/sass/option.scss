@@ -7,7 +7,6 @@
 
     &__item {
         display: flex;
-        padding-right: 20px;
 
         &:not(:last-child) {
             margin-bottom: 40px;
@@ -16,6 +15,7 @@
 
     &__name {
         width: 50%;
+        padding-right: 20px;
     }
 
     &__name-text {
@@ -23,6 +23,11 @@
         max-width: 430px;
         font-size: 20px;
         line-height: 30px;
+
+        @include before_1024 {
+            font-size: 16px;
+            line-height: 20px;
+        }
     }
 
     &__name-note {
@@ -39,5 +44,10 @@
         max-width: 650px;
         font-size: 16px;
         line-height: 24px;
+
+        @include before_1024 {
+            font-size: 14px;
+            line-height: 18px;
+        }
     }
 }

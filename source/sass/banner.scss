@@ -13,10 +13,18 @@
     &__flex {
         display: flex;
         flex-grow: 1;
+
+        @include before_1024 {
+            flex-direction: column;
+        }
     }
 
     &__el {
         width: 50%;
+
+        @include before_1024 {
+            width: 100%;
+        }
 
         &--left {
             padding-top: 85px;
@@ -31,6 +39,11 @@
             display: flex;
             align-items: flex-end;
             justify-content: center;
+            flex-grow: 1;
+
+            @include before_1024 {
+                min-height: 300px;
+            }
         }
     }
 
@@ -82,6 +95,10 @@
             flex-wrap: wrap;
             margin-bottom: 20px;
         }
+
+        @include before_1024 {
+            display: none;
+        }
     }
 
     &__info-el {
@@ -109,6 +126,10 @@
 
     &__row {
         margin-bottom: 85px;
+
+        @include before_1024 {
+            margin-bottom: 24px;
+        }
     }
 
     &__heals {

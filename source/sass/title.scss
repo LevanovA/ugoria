@@ -4,4 +4,9 @@
     line-height: 73px;
     font-weight: bold;
     color: $text-main-c;
+
+    @include before_1024 {
+        font-size: 46px;
+        line-height: 70px;
+    }
 }

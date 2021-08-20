@@ -7,6 +7,18 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @include before_1024 {
+            flex-direction: column;
+        }
+    }
+
+    &__logo,
+    &__tel {
+
+        @include before_1024 {
+            margin-bottom: 10px;
+        }
     }
 
     &__tel {
