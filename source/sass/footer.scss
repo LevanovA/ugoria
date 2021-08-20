@@ -36,17 +36,6 @@
             margin-bottom: 24px;
         }
 
-        &:first-child {
-
-            @include before_1024 {
-                margin-bottom: 30px;
-            }
-
-            @include before__768 {
-                margin-bottom: 0;
-            }
-        }
-
         &--desktop {
 
             @include before__768 {
@@ -60,6 +49,17 @@
                 margin-bottom: 0;
                 padding: 16px 20px;
                 border-bottom: 1px solid rgba(152, 179, 229, 0.25);
+            }
+
+            &:first-child {
+
+                @include before_1024 {
+                    margin-bottom: 30px;
+                }
+
+                @include before__768 {
+                    margin-bottom: 0;
+                }
             }
         }
 

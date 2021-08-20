@@ -21,6 +21,10 @@
     outline: none;
     transition: 0.5s;
 
+    @include before__768 {
+        height: 54px;
+    }
+
     &:hover {
         color: $button-main-c;
         background-color: $button-hover-c;
@@ -52,6 +56,11 @@
         background-color: #ffffff;
         border: 1px solid $main-c;
         text-transform: none;
+
+        @include before__768 {
+            width: 200px;
+            height: 48px;
+        }
 
         &:hover {
             color: #ffffff;

@@ -3,6 +3,10 @@
     padding: 60px 0 80px;
     background-color: $main-c;
 
+    @include before__768 {
+        padding: 60px 0 45px;
+    }
+
     &__flex {
         display: flex;
 
@@ -33,6 +37,11 @@
         font-size: 28px;
         line-height: 36px;
         color: #ffffff;
+
+        @include before__768 {
+            font-size: 24px;
+            line-height: 31px;
+        }
     }
 
     &__subtitle {

@@ -5,6 +5,16 @@
     background-color: transparent;
     flex-shrink: 0;
     cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+    &--mobile {
+        display: none;
+
+        @include before__768 {
+            display: block;
+            transform: rotate(180deg);
+        }
+    }
 }
 
 .burger__strip,

@@ -32,6 +32,10 @@
             @include before_1366 {
                 padding-top: 45px;
             }
+
+            @include before__768 {
+                padding-top: 21px;
+            }
         }
 
         &--right {
@@ -43,6 +47,10 @@
 
             @include before_1024 {
                 min-height: 300px;
+            }
+
+            @include before__768 {
+                min-height: 248px;
             }
         }
     }
@@ -58,6 +66,11 @@
             font-size: 26px;
             line-height: 32px;
         }
+
+        @include before__768 {
+            font-size: 18px;
+            line-height: 23px;
+        }
     }
 
     &__title {
@@ -72,6 +85,12 @@
             font-size: 30px;
             line-height: 40px;
         }
+
+        @include before__768 {
+            margin-bottom: 12px;
+            font-size: 24px;
+            line-height: 31px;
+        }
     }
 
     &__description {
@@ -83,6 +102,12 @@
 
         @include before_1366 {
             margin-bottom: 44px;
+        }
+
+        @include before__768 {
+            margin-bottom: 28px;
+            font-size: 14px;
+            line-height: 18px;
         }
     }
 
@@ -149,6 +174,20 @@
         font-size: 18px;
         line-height: 23px;
         color: #FFFFFF;
+
+        @include before__768 {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+
+    &__heals-icon {
+
+        @include before__768 {
+            width: 24px;
+            line-height: 24px;
+        }
     }
 
     &__img {

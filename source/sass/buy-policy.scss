@@ -11,6 +11,10 @@
         @include before_1024 {
             flex-direction: column;
         }
+
+        @include before__480 {
+            align-items: flex-start;
+        }
     }
 
     &__logo,

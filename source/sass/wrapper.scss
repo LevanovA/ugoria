@@ -4,9 +4,17 @@
     margin: 0 auto;
     box-sizing: border-box;
 
+    @include before__768 {
+        padding: 0 20px;
+    }
+
     &--banner {
         max-width: 1820px;
         padding: 0 50px 0 130px;
+
+        @include before__768 {
+            padding: 0 20px;
+        }
     }
 
     &--full-height {

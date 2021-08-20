@@ -4,12 +4,13 @@
         display: flex;
         flex-wrap: wrap;
 
-        @include before__480 {
+        @include before__768 {
             flex-direction: column;
         }
     }
 
     &__item {
+        position: relative;
         display: flex;
         flex-shrink: 0;
         align-items: center;
@@ -17,6 +18,10 @@
         &--half {
             width: 50%;
             margin-bottom: 30px;
+
+            @include before__768 {
+                width: 100%;
+            }
         }
     }
 

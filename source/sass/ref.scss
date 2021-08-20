@@ -2,6 +2,11 @@
     margin-bottom: 80px;
     padding-top: 90px;
 
+    @include before__768 {
+        margin-bottom: 40px;
+        padding-top: 40px;
+    }
+
     &__slider {
         display: flex;
         justify-content: space-between;
@@ -9,14 +14,25 @@
 
         @include before_1024 {
             flex-wrap: wrap;
+            border: 2px solid #F7F8FA;
+            justify-content: flex-start;
+            align-items: stretch;
         }
     }
 
     &__slide {
         display: flex;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
         @include before_1024 {
-            width: 50%;
+            width: 100%;
+        }
+
+        &:not(:last-child) {
+
+            @include before_1024 {
+                border-bottom: 2px solid #F7F8FA;
+            }
         }
     }
 
@@ -29,6 +45,17 @@
         line-height: 23px;
         color: $text-main-c;
         text-decoration: none;
+
+        @include before_1024 {
+            width: 100%;
+            text-align: center;
+            padding: 24px 0;
+        }
+
+        @include before__480 {
+            font-size: 16px;
+            line-height: 20px;
+        }
 
         &:before {
             content: "";

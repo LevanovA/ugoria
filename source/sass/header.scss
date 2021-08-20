@@ -2,15 +2,31 @@
     padding: 35px 0 30px;
     border-bottom: 1px solid #DFE5F2;
 
+    @include before__768 {
+        padding: 30px 0;
+    }
+
     &__box {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
+    &__logo {
+
+        @include before__768 {
+            width: 179px;
+            height: 28px;
+        }
+    }
+
     &__list {
         display: flex;
         align-items: center;
+
+        @include before__768 {
+            display: none;
+        }
     }
 
     &__item {

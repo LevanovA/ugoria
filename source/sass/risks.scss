@@ -1,6 +1,10 @@
 .risks {
     margin-bottom: 120px;
 
+    @include before__768 {
+        margin-bottom: 80px;
+    }
+
     &__list {
         display: flex;
         flex-wrap: wrap;
@@ -52,12 +56,24 @@
         background-color: #F7F8FA;
         border-radius: 40px;
 
+        @include before__768 {
+            min-height: 240px;
+            padding: 24px;
+        }
+
         &--all {
             flex-direction: row;
             align-items: center;
             justify-content: flex-start;
             min-height: 0;
             height: auto;
+
+            @include before__768 {
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-between;
+                min-height: 240px;
+            }
 
             .risks__circle {
                 margin-right: 40px;
@@ -78,6 +94,29 @@
         height: 140px;
         background-color: #ffffff;
         border-radius: 50%;
+
+        @include before__768 {
+            width: 80px;
+            height: 80px;
+        }
+    }
+
+    &__icon {
+
+        @include before__768 {
+            width: 36px;
+            height: auto;
+        }
+    }
+
+    &__plus-icon {
+        width: 40px;
+        height: auto;
+    }
+
+    &__minus-icon {
+        width: 40px;
+        height: auto;
     }
 
     &__title {
@@ -93,6 +132,12 @@
         font-weight: 500;
         font-size: 18px;
         line-height: 27px;
+
+        @include before__768 {
+            max-width: none;
+            font-size: 14px;
+            line-height: 21px;
+        }
     }
 
     &__button {
@@ -106,6 +151,11 @@
         border: none;
         background-color: transparent;
         cursor: pointer;
+
+        @include before__768 {
+            top: 20px;
+            right: 20px;
+        }
     }
 
     &__info {
@@ -125,6 +175,10 @@
 
         @include before_1024 {
             width: 100%;
+        }
+
+        @include before__768 {
+            padding: 20px;
         }
 
         &--active {
@@ -161,6 +215,10 @@
         font-size: 18px;
         line-height: 27px;
         color: #ffffff;
+
+        @include before__768 {
+            padding-right: 45px;
+        }
     }
 
     &__info-subtitle {

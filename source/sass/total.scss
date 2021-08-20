@@ -14,6 +14,12 @@
         font-weight: bold;
         font-size: 32px;
         line-height: 42px;
+
+        @include before__768 {
+            margin-bottom: 24px;
+            font-size: 24px;
+            line-height: 31px;
+        }
     }
 
     &__list {
@@ -49,6 +55,11 @@
         &--big {
             font-size: 28px;
             line-height: 36px;
+
+            @include before__768 {
+                font-size: 24px;
+                line-height: 31px;
+            }
         }
     }
 
