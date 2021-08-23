@@ -15,4 +15,14 @@ $(document).ready(function(){
     inputDepartment.inputmask("999-999", {showMaskOnHover: false});
     inputPhone.inputmask("+7 (999) 999-99-99", {showMaskOnHover: false});
     inputCode.inputmask("99-99-99", {showMaskOnHover: false});
+
+    const inputs = $('input')
+
+    inputs.on('invalid', function (item, index) {
+        if (index === 0) {
+            $(this).focus();
+        }
+        // item[0].focus();
+        console.log(111, item)
+    })
 });

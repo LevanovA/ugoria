@@ -1,0 +1,33 @@
+.comparison {
+
+    &__item {
+        display: flex;
+    }
+
+    &__advantages,
+    &__flaw {
+        width: 50%;
+        padding: 20px;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: -1px;
+        color: #002A54;
+        border-bottom: 2px solid #ffffff;
+    }
+
+    &__advantages {
+        border-right: 2px solid #ffffff;
+        background-color: #DFE5F2;
+    }
+
+    &__flaw {
+        background-color: #F7F8FA;
+    }
+
+    &__title-table {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+    }
+}

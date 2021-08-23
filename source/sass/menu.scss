@@ -1,0 +1,133 @@
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    background-color: $main-c;
+    z-index: 9;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+
+    &--active {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    &__logo-link {
+        display: block;
+        padding: 35px 0 30px;
+    }
+
+    &__flex {
+        display: flex;
+    }
+
+    &__el {
+
+        &--left {
+            flex-grow: 1;
+            margin-right: 100px;
+        }
+
+        &--right {
+            flex-shrink: 0;
+        }
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.45);
+    }
+
+    &__list {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        &--block {
+            display: block;
+            border-right: 1px solid rgba(255, 255, 255, 0.45);
+            padding-bottom: 100px;
+        }
+
+        &--w33 {
+            width: 33.25%;
+            flex-shrink: 0;
+        }
+
+        &--greedy {
+            flex-grow: 1;
+            padding-bottom: 100px;
+
+            .menu__item {
+
+                &:nth-child(2n+1) {
+                    padding-left: 60px;
+                }
+
+                &:nth-child(2n) {
+                    padding-left: 40px;
+                }
+            }
+
+        }
+    }
+
+    &__item {
+        width: 33.25%;
+        margin-bottom: 24px;
+
+        &--w100 {
+            width: 100%;
+            padding-right: 0;
+        }
+
+        &--w50 {
+            width: 50%;
+        }
+    }
+
+    &__link {
+        font-family: $font-main;
+        color: #ffffff;
+        font-size: 14px;
+        line-height: 20px;
+        text-decoration: none;
+        transition: 0.5s;
+
+        &:hover {
+            opacity: 0.7;
+        }
+
+        &--fs48 {
+            font-weight: 800;
+            font-size: 48px;
+            line-height: 72px;
+        }
+
+        &--fs22 {
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 34px;
+        }
+    }
+
+    &__bottom {
+
+        .menu__item {
+
+            &:nth-child(3n+2) {
+                padding-left: 60px;
+            }
+
+            &:nth-child(3n+3) {
+                padding-left: 40px;
+            }
+        }
+    }
+}

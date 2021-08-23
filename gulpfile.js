@@ -30,6 +30,17 @@ gulp.task("css", function () {
         .pipe(server.stream()); //Перезагружаем страницу
 });
 
+//Преобразование sass в css без минификации
+gulp.task("full", function () {
+    return gulp.src("source/sass/style.scss")
+        .pipe(plumber()) //Не останавливает автоматизацию при возникновении ошибок
+        .pipe(sourcemap.init()) //Инициализируем отслеживаение изменения для создания карты
+        .pipe(sass()) //Преобразовываем sass в css
+        .pipe(postcss([ autoprefixer() ])) //Расставляем префиксы
+        .pipe(sourcemap.write(".")) //Записываем изменения для создания карты
+        .pipe(gulp.dest("build")) //Копируем файл в build
+});
+
 //Собираем все js файлы в один
 gulp.task("js", function () {
     return gulp.src("source/js/*.js")
