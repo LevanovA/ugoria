@@ -3,12 +3,19 @@
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 100%;
+    height: 100%;
+    padding-bottom: 30px;
     background-color: $main-c;
-    z-index: 9;
+    z-index: 101;
     visibility: hidden;
+    overflow-y: auto;
     opacity: 0;
     transition: 0.5s;
+
+    @include before__768 {
+        top: 95px;
+        height: calc(100% - 95px);
+    }
 
     &--active {
         visibility: visible;
@@ -18,10 +25,18 @@
     &__logo-link {
         display: block;
         padding: 35px 0 30px;
+
+        @include before__768 {
+            display: none;
+        }
     }
 
     &__flex {
         display: flex;
+
+        @include before_1366 {
+            flex-direction: column;
+        }
     }
 
     &__el {
@@ -29,6 +44,11 @@
         &--left {
             flex-grow: 1;
             margin-right: 100px;
+
+            @include before_1366 {
+                margin-right: 0;
+                margin-bottom: 40px;
+            }
         }
 
         &--right {
@@ -41,6 +61,13 @@
         justify-content: space-between;
         margin-bottom: 40px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.45);
+
+        @include before__768 {
+            flex-direction: column;
+            margin-bottom: 0;
+            padding-top: 30px;
+            border: none;
+        }
     }
 
     &__list {
@@ -53,6 +80,15 @@
             display: block;
             border-right: 1px solid rgba(255, 255, 255, 0.45);
             padding-bottom: 100px;
+
+            @include before_1024 {
+                padding-bottom: 50px;
+            }
+
+            @include before__768 {
+                border: none;
+                padding-bottom: 0;
+            }
         }
 
         &--w33 {
@@ -64,14 +100,35 @@
             flex-grow: 1;
             padding-bottom: 100px;
 
+            @include before_1024 {
+                padding-bottom: 50px;
+            }
+
+            @include before__768 {
+                flex-direction: column;
+                padding-bottom: 0;
+            }
+
             .menu__item {
 
                 &:nth-child(2n+1) {
                     padding-left: 60px;
+
+                    @include before_1024 {
+                        padding-left: 30px;
+                    }
+
+                    @include before__768 {
+                        padding-left: 0;
+                    }
                 }
 
                 &:nth-child(2n) {
                     padding-left: 40px;
+
+                    @include before__768 {
+                        padding-left: 0;
+                    }
                 }
             }
 
@@ -81,6 +138,10 @@
     &__item {
         width: 33.25%;
         margin-bottom: 24px;
+
+        @include before__768 {
+            width: 100%;
+        }
 
         &--w100 {
             width: 100%;
@@ -108,12 +169,33 @@
             font-weight: 800;
             font-size: 48px;
             line-height: 72px;
+
+            @media screen and (max-width: 1500px) {
+                font-weight: 700;
+                font-size: 35px;
+                line-height: 48px;
+            }
+
+            @include before_1024 {
+                font-size: 30px;
+                line-height: 42px;
+            }
         }
 
         &--fs22 {
             font-weight: 500;
             font-size: 22px;
             line-height: 34px;
+
+            @media screen and (max-width: 1500px) {
+                font-size: 18px;
+                line-height: 28px;
+            }
+
+            @include before_1024 {
+                font-size: 16px;
+                line-height: 22px;
+            }
         }
     }
 
@@ -123,10 +205,22 @@
 
             &:nth-child(3n+2) {
                 padding-left: 60px;
+
+                @include before_1024 {
+                    padding-left: 30px;
+                }
+
+                @include before__768 {
+                    padding-left: 0;
+                }
             }
 
             &:nth-child(3n+3) {
                 padding-left: 40px;
+
+                @include before__768 {
+                    padding-left: 0;
+                }
             }
         }
     }
