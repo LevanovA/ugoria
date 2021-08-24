@@ -1,33 +1,141 @@
 .comparison {
 
-    &__item {
-        display: flex;
+    &__desktop {
+
+        @include before__768 {
+            display: none;
+        }
     }
 
-    &__advantages,
-    &__flaw {
-        width: 50%;
-        padding: 20px;
+    &__list {
+        display: flex;
+        justify-content: space-between;
+
+        @include before_1024 {
+            flex-direction: column;
+        }
+    }
+
+    &__el {
+        width: 48%;
+        border-radius: 40px;
+
+        @include before_1024 {
+            width: 100%;
+        }
+
+        &--advantages {
+            background-color: #EAF1FE;
+            transform: scale(1.1);
+            box-shadow: 0 8px 40px 0 #D3D9E7;
+
+            @include before_1024 {
+                margin-bottom: 40px;
+                transform: scale(1);
+            }
+        }
+
+        &--flaw {
+            background-color: #F7F8FA;
+
+            .comparison__title {
+                color: #919499;
+                background-color: #EFEFEF;
+            }
+
+            .comparison__text {
+                color: #575757;
+            }
+        }
+    }
+
+    &__title {
+        padding: 21px 21px 17px;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 26px;
+        letter-spacing: -1px;
+        text-align: center;
+        color: #2E60C0;
+        background-color: #D4E1FC;
+        border-top-right-radius: 40px;
+        border-top-left-radius: 40px;
+    }
+
+    &__list {
+        padding: 20px 20px 25px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        padding: 14px 0;
+
+        &:not(:last-child) {
+            border-bottom: 1px solid #ffffff;
+        }
+    }
+
+    &__icon {
+        flex-shrink: 0;
+        margin-right: 24px;
+    }
+
+    &__text {
         font-size: 14px;
         line-height: 18px;
         letter-spacing: -1px;
         color: #002A54;
-        border-bottom: 2px solid #ffffff;
     }
 
-    &__advantages {
-        border-right: 2px solid #ffffff;
+    //--------- Стили для мобильной версии ---------//
+
+    &__mobile {
+        display: none;
+
+        @include before__768 {
+            display: block;
+        }
+    }
+
+    &__map {
+        display: flex;
+        margin-bottom: 24px;
+    }
+
+    &__map-el {
+        display: flex;
+
+        &--advantages {
+            margin-right: 20px;
+        }
+    }
+
+    &__color {
+        margin-right: 8px;
+        width: 27px;
+        height: 17px;
         background-color: #DFE5F2;
     }
 
-    &__flaw {
-        background-color: #F7F8FA;
+    &__color-name {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 16px;
+        letter-spacing: -1px;
     }
 
-    &__title-table {
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 20px;
-        text-align: center;
+    &__info-el {
+        padding: 16px 12px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: -1px;
+        background: #DFE5F2;
+        border-bottom: 1px solid #ffffff;
+
+        &:nth-child(even) {
+            background: #F7F8FA;
+        }
     }
 }

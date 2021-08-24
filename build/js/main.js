@@ -117,7 +117,10 @@ function showModalWindow (button) {
     const popupName = button.attr('data-popup-name');
     const popup = $(`#${popupName}`);
     const popupClose = popup.find('.popup__close');
+    const popupBack = popup.find('.popup__back');
     const popupActive = $('.popup.popup--active');
+    const windowWidth = window.innerWidth
+    const headerBlock = $('.header--main')
 
     //Проверяем, есть ли уже открыте popup и если да, то закрываем его
     if (popupActive.length) {
@@ -129,10 +132,23 @@ function showModalWindow (button) {
     //Открываем popup
     popup.addClass('popup--active');
 
+    if (windowWidth < 768) {
+        headerBlock.addClass('header--active')
+    }
+
     //Закрытие popup на крестик
-    popupClose.on('click', function () {
-        closeModalWindow(popup);
-    })
+    if (popupClose) {
+        popupClose.on('click', function () {
+            closeModalWindow(popup);
+        })
+    }
+
+    //Закрытие popup на кнопку назад
+    if (popupBack) {
+        popupBack.on('click', function () {
+            closeModalWindow(popup);
+        })
+    }
 
     //Закрытие popup при клике на темную область
     popup.on('click', function (e) {
@@ -151,10 +167,16 @@ function showModalWindow (button) {
 
 //Закрывает попап и удаляет обработчик прослушки нажатия клавиш клавиатуры
 function closeModalWindow(popup, doUnBlockBody = true) {
+    const headerBlock = $('.header--main')
     if (doUnBlockBody) {
         unBlockBody();
         popup.removeClass('popup--active');
         $(document).off('keydown');
+
+        if (headerBlock) {
+            headerBlock.removeClass('header--active')
+        }
+
     } else {
         popup.removeClass('popup--active');
     }

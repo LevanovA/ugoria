@@ -12,6 +12,11 @@
     transition: 0.5s;
     z-index: 100;
 
+    @include before__768 {
+        top: 95px;
+        height: calc(100% - 95px);
+    }
+
     &--active {
         opacity: 1;
         visibility: visible;
@@ -28,25 +33,46 @@
         justify-content: center;
         min-height: 100%;
         padding: 30px 10px;
+
+        @include before__768 {
+            align-items: flex-start;
+            flex-grow: 1;
+            padding: 0;
+        }
     }
 
     &__content {
         position: relative;
         max-width: 1360px;
+        width: 100%;
         padding: 72px 80px 82px;
         background: #ffffff;
         border-radius: 80px;
         transition: 0.5s;
         transform: translate(0, -100%);
         opacity: 0;
+
+        @include before__768 {
+            padding: 20px;
+            border-radius: 0;
+            transform: translate(0, 0);
+        }
     }
 
     &__title {
-        margin-bottom: 40px;
+        font-weight: bold;
+        margin-bottom: 44px;
         font-size: 28px;
         line-height: 36px;
         color: $text-main-c;
         text-align: center;
+
+        &--desktop {
+
+            @include before__768 {
+                display: none;
+            }
+        }
     }
 
     &__row {
@@ -55,9 +81,16 @@
 
     &__close {
         position: absolute;
-        right: 60px;
-        top: 40px;
+        right: 25px;
+        top: 30px;
         cursor: pointer;
+
+        &--desktop {
+
+            @include before__768 {
+                display: none;
+            }
+        }
 
         &-icon {
             transition: 0.5s;
@@ -65,6 +98,14 @@
             &:hover {
                 opacity: 0.7;
             }
+        }
+    }
+
+    &__back {
+        display: none;
+
+        @include before__768 {
+            display: flex;
         }
     }
 }

@@ -1,9 +1,25 @@
 .header {
     padding: 35px 0 30px;
     border-bottom: 1px solid #DFE5F2;
+    transition: 0.5s;
 
     @include before__768 {
         padding: 30px 0;
+    }
+
+    &--active {
+        background-color: #ffffff;
+        border-bottom: 1px solid $main-c;
+
+        .header__logo {
+            fill: $main-c;
+        }
+
+        .burger__strip,
+        .burger__strip:before,
+        .burger__strip:after {
+            background-color: $main-c;
+        }
     }
 
     &__box {
@@ -13,6 +29,8 @@
     }
 
     &__logo {
+        fill: #DFE5F2;
+        transition: 0.5s;
 
         @include before__768 {
             width: 179px;
