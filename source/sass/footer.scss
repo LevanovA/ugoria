@@ -148,4 +148,12 @@
         line-height: 16px;
         color: $second-c;
     }
+
+    &--payment {
+        padding-top: 100px;
+
+        .footer__note-text {
+            color: #2C2C2C;
+        }
+    }
 }

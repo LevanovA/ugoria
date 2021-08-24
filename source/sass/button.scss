@@ -48,6 +48,15 @@
         }
     }
 
+    &--third-c {
+        background-color: #919499;
+        border: 1px solid #919499;
+
+        &:hover {
+            color: #919499;
+        }
+    }
+
     &--banner {
         width: 240px;
         font-size: 16px;
@@ -87,9 +96,12 @@
     }
 
     &--payment {
-        max-width: 336px;
+        width: 336px;
         box-shadow: 0 20px 50px 0 #0000001A;
 
+        @include before__480 {
+            width: 280px
+        }
     }
 }
 

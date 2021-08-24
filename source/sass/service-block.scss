@@ -1,0 +1,58 @@
+.service-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__icon {
+        margin-bottom: 20px;
+    }
+
+    &__event {
+        margin-bottom: 20px;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 30px;
+
+        @include before_1024 {
+            font-size: 22px;
+        }
+    }
+
+    &__description {
+        margin-bottom: 64px;
+        font-size: 16px;
+        line-height: 19px;
+
+        @include before_1024 {
+            margin-bottom: 40px;
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+
+        @include before_1024 {
+            flex-direction: column;
+        }
+    }
+
+    &__button {
+        margin-right: 80px;
+
+        @include before_1024 {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+    }
+}

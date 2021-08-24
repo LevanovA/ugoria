@@ -27,6 +27,7 @@
 
     &--payment {
         max-width: 1130px;
+        height: 100%;
         padding: 0 50px;
 
         @include before__768 {

@@ -16,13 +16,19 @@ $(document).ready(function(){
     inputPhone.inputmask("+7 (999) 999-99-99", {showMaskOnHover: false});
     inputCode.inputmask("99-99-99", {showMaskOnHover: false});
 
-    const inputs = $('input')
+    const inputs = $('.input-box__input')
 
-    inputs.on('invalid', function (item, index) {
-        if (index === 0) {
-            $(this).focus();
+    //Уменьшаем или увеличиваем label поля инпут
+    inputs.on('focus', function (item, index) {
+        const inputBlock = $(this).parents('.input-box')
+        inputBlock.addClass('input-box--up')
+    })
+
+    inputs.on('blur', function (item, index) {
+        const inputBlock = $(this).parents('.input-box')
+
+        if ($(this).val().length === 0) {
+            inputBlock.removeClass('input-box--up')
         }
-        // item[0].focus();
-        console.log(111, item)
     })
 });

@@ -47,7 +47,7 @@
                                             type="text"
                                             class="input-box__input"
                                             name="fio"
-                                            required
+                                            data-required="false"
                                             disabled
                                         >
                                         <div class="input-box__label">ФИО</div>
@@ -61,7 +61,7 @@
                                             type="text"
                                             class="input-box__input input-box__input--birthday"
                                             name="birthday"
-                                            required
+                                            data-required="false"
                                             disabled
                                         >
                                         <div class="input-box__label">День рождение</div>
@@ -75,7 +75,7 @@
                                             type="text"
                                             class="input-box__input"
                                             name="place"
-                                            required
+                                            data-required="false"
                                             disabled
                                         >
                                         <div class="input-box__label">Место рождения</div>
@@ -89,7 +89,7 @@
                                             type="text"
                                             class="input-box__input"
                                             name="sex"
-                                            required
+                                            data-required="false"
                                             disabled
                                         >
                                         <div class="input-box__label">Пол</div>
@@ -103,7 +103,7 @@
                                             type="text"
                                             class="input-box__input input-box__input--passport"
                                             name="passport"
-                                            required
+                                            data-required="false"
                                             disabled
                                         >
                                         <div class="input-box__label">Серия и номер паспорта</div>
@@ -117,7 +117,7 @@
                                             type="text"
                                             class="input-box__input input-box__input--issued"
                                             name="issued"
-                                            required
+                                            data-required="false"
                                             disabled
                                         >
                                         <div class="input-box__label">Дата выдачи</div>
@@ -131,7 +131,7 @@
                                             type="text"
                                             class="input-box__input input-box__input-department"
                                             name="department"
-                                            required
+                                            data-required="false"
                                             disabled
                                         >
                                         <div class="input-box__label">Код подразделения</div>
@@ -145,7 +145,7 @@
                                             type="text"
                                             class="input-box__input"
                                             name="subdivision"
-                                            required
+                                            data-required="false"
                                             disabled
                                         >
                                         <div class="input-box__label">Кем выдан</div>
@@ -159,9 +159,10 @@
                                             type="text"
                                             class="input-box__input input-box__input--phone"
                                             name="phone"
-                                            required
+
                                         >
                                         <div class="input-box__label">Телефон</div>
+                                        <div class="input-box__error-message">Заполните поле</div>
                                     </label>
                                     <div class="input-box__description">
                                         На этот телефон будет отправлено смс для подтверждения.
@@ -175,9 +176,10 @@
                                             type="text"
                                             class="input-box__input input-box__input--email"
                                             name="email"
-                                            required
+                                            data-type="email"
                                         >
                                         <div class="input-box__label">E-mail</div>
+                                        <div class="input-box__error-message">Заполните поле</div>
                                     </label>
                                     <div class="input-box__description">
                                         На этот телефон будет отправлено смс для подтверждения.
@@ -193,9 +195,9 @@
                                             type="text"
                                             class="input-box__input input-box__input--code"
                                             name="code"
-                                            required
                                         >
                                         <div class="input-box__label">Код подтверждения</div>
+                                        <div class="input-box__error-message">Заполните поле</div>
                                     </label>
                                 </div>
                             </div>
@@ -216,7 +218,7 @@
                                             type="text"
                                             class="input-box__input"
                                             name="promocode"
-                                            required
+                                            data-required="false"
                                         >
                                         <div class="input-box__label">Введите промокод</div>
                                     </label>
@@ -269,35 +271,40 @@
                         <div class="checkbox checkbox--payment form__row">
                             <div class="checkbox__item">
                                 <input
-                                    data-required="false"
                                     id="agreement"
                                     type="checkbox"
                                     class="checkbox__input visually-hidden"
                                     name="agreement"
                                     checked
-                                    required
                                 >
                                 <label for="agreement" class="checkbox__name checkbox__name--info">
-                                    <span class="checkbox__window">
+                                    <div class="checkbox__window">
                                         <div class="checkbox__icon-mark"></div>
-                                    </span>
-                                    <span class="checkbox__text">
-                                        С положениями
+                                    </div>
+                                    <div class="checkbox__content">
+                                        <span class="checkbox__text">С положениями</span>
                                         <a href="#" class="checkbox__link" target="_blank" rel="noopener noreferrer">правил, декларацией и политикой обработки персональных данных</a> ознакомлен и согласен
-                                    </span>
+                                        <div class="checkbox__error-message">
+                                            необходимо отметить это поле
+                                        </div>
+                                    </div>
                                 </label>
                             </div>
                         </div>
-                        <button class="button button--payment form__mb100">Оформить</button>
-                        <div class="form__note">
-                            <div class="form__note-text">
-                                Не удается купить полис? Отправьте скриншот с ошибкой или напишите на <a class="form__note-link" href="mailto:" target="_blank" rel="noopener noreferrer">support@ulife.ru</a> и мы решим все ваши проблемы!
-                            </div>
-                        </div>
+                        <button type="submit" class="button button--payment">Оформить</button>
                     </form>
                 </div>
             </section>
         </section>
+        <footer class="footer footer--payment">
+            <div class="wrapper wrapper--payment">
+                <div class="footer__note">
+                    <div class="footer__note-text">
+                        Не удается купить полис? Отправьте скриншот с ошибкой или напишите на <a class="form__note-link" href="mailto:" target="_blank" rel="noopener noreferrer">support@ulife.ru</a> и мы решим все ваши проблемы!
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/vendor.js"></script>

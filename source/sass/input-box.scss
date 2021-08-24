@@ -39,9 +39,21 @@
             line-height: 14px;
         }
 
-        &:focus + .input-box__label,
-        //&:hover + .input-box__label,
-        &:valid + .input-box__label {
+        //&:focus + .input-box__label,
+        //&:valid + .input-box__label {
+        //    font-size: 12px;
+        //    top: 8px;
+        //    transform: translate(0, 0);
+        //
+        //    @include before__768 {
+        //        font-size: 10px;
+        //    }
+        //}
+    }
+
+    &--up {
+
+        .input-box__label {
             font-size: 12px;
             top: 8px;
             transform: translate(0, 0);
@@ -62,6 +74,24 @@
         @include before__768 {
             font-size: 12px;
             line-height: 16px;
+        }
+    }
+
+    &__error-message {
+        position: absolute;
+        width: 100%;
+        bottom: 3px;
+        left: 24px;
+        font-size: 12px;
+        line-height: 14px;
+        color: $error-c;
+        display: none;
+    }
+
+    &--error {
+
+        .input-box__input {
+            border-color: $error-c;
         }
     }
 }

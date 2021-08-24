@@ -108,19 +108,19 @@
         }
     }
 
-    //&__error-message {
-    //    display: none;
-    //    margin-top: 5px;
-    //    font-size: 12px;
-    //    line-height: 16px;
-    //    letter-spacing: 0.04em;
-    //    color: red;
-    //}
-    //
-    //&--error {
-    //
-    //    .checkbox__window {
-    //        border: 1px solid red;
-    //    }
-    //}
+    &__error-message {
+        display: none;
+        margin-top: 5px;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.04em;
+        color: $error-c;
+    }
+
+    &--error {
+
+        .checkbox__window {
+            border: 1px solid $error-c;
+        }
+    }
 }
