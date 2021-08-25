@@ -154,6 +154,7 @@ function showModalWindow (button) {
 
     if (windowWidth < 768) {
         headerBlock.addClass('header--active')
+        window.scrollTo(pageXOffset, 0);
     }
 
     //Закрытие popup на крестик
