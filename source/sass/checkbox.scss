@@ -86,7 +86,6 @@
     }
 
     &--payment {
-        max-width: 500px;
 
         .checkbox__window {
             border: 1px solid #DFE5F2;
@@ -106,6 +105,10 @@
             color: $second-c;
             border-bottom: 1px solid $second-c;
         }
+    }
+
+    &--width500 {
+        max-width: 500px;
     }
 
     &__error-message {
