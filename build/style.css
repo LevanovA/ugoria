@@ -1285,11 +1285,12 @@ input[type="radio"].visually-hidden {
   overflow-y: auto;
   overflow-x: hidden;
   transition: 0.5s;
-  z-index: 100; }
+  z-index: 103; }
   @media screen and (max-width: 767px) {
     .popup {
       top: 95px;
-      height: calc(100% - 95px); } }
+      height: calc(100% - 95px);
+      z-index: 100; } }
   .popup--active {
     opacity: 1;
     visibility: visible; }
@@ -1428,15 +1429,13 @@ input[type="radio"].visually-hidden {
   margin-bottom: 24px; }
 
 .comparison__map-el {
-  display: flex; }
+  display: flex;
+  align-items: center; }
   .comparison__map-el--advantages {
     margin-right: 20px; }
 
-.comparison__color {
-  margin-right: 8px;
-  width: 27px;
-  height: 17px;
-  background-color: #DFE5F2; }
+.comparison__status-icon {
+  margin-right: 8px; }
 
 .comparison__color-name {
   font-size: 12px;
@@ -1444,16 +1443,33 @@ input[type="radio"].visually-hidden {
   line-height: 16px;
   letter-spacing: -1px; }
 
+.comparison__info-flex {
+  display: flex;
+  align-items: center;
+  background: #F7F8FA;
+  margin: 0 -20px;
+  padding: 8px 20px;
+  border-bottom: 2px solid #ffffff; }
+
+.comparison__info-icon {
+  flex-shrink: 0;
+  margin-right: 15px; }
+
 .comparison__info-el {
-  padding: 16px 12px;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
-  letter-spacing: -1px;
-  background: #DFE5F2;
-  border-bottom: 1px solid #ffffff; }
-  .comparison__info-el:nth-child(even) {
-    background: #F7F8FA; }
+  letter-spacing: -1px; }
+
+.comparison__info-description {
+  display: flex;
+  align-items: flex-start; }
+  .comparison__info-description:not(:last-child) {
+    margin-bottom: 10px; }
+
+.comparison__info-done, .comparison__info-error {
+  flex-shrink: 0;
+  margin-right: 10px; }
 
 .scrollbar {
   overflow-y: scroll;

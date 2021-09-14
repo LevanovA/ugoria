@@ -105,17 +105,15 @@
 
     &__map-el {
         display: flex;
+        align-items: center;
 
         &--advantages {
             margin-right: 20px;
         }
     }
 
-    &__color {
+    &__status-icon {
         margin-right: 8px;
-        width: 27px;
-        height: 17px;
-        background-color: #DFE5F2;
     }
 
     &__color-name {
@@ -125,17 +123,39 @@
         letter-spacing: -1px;
     }
 
+    &__info-flex {
+        display: flex;
+        align-items: center;
+        background: #F7F8FA;
+        margin: 0 -20px;
+        padding: 8px 20px;
+        border-bottom: 2px solid #ffffff;
+    }
+
+    &__info-icon {
+        flex-shrink: 0;
+        margin-right: 15px;
+    }
+
     &__info-el {
-        padding: 16px 12px;
         font-size: 12px;
         font-weight: 400;
         line-height: 16px;
         letter-spacing: -1px;
-        background: #DFE5F2;
-        border-bottom: 1px solid #ffffff;
+    }
 
-        &:nth-child(even) {
-            background: #F7F8FA;
+    &__info-description {
+        display: flex;
+        align-items: flex-start;
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
         }
+    }
+
+    &__info-done,
+    &__info-error {
+        flex-shrink: 0;
+        margin-right: 10px;
     }
 }
