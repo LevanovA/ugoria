@@ -1,0 +1,234 @@
+.advantages {
+    margin-bottom: 80px;
+    background: linear-gradient(to right, #EAF1FE 50%, #F7F8FA 50%);
+
+    &__title {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 85px;
+
+        @include before__768 {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__title-name {
+        width: 50%;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 31px;
+        letter-spacing: -1px;
+        text-align: center;
+        color: #2E60C0;
+
+        @include before_1024 {
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        @include before__768 {
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+        @include before__768 {
+            font-size: 12px;
+            line-height: 14px;
+        }
+
+        &--other {
+            color: #565656;
+        }
+    }
+
+    &__title-s {
+        color: #565656;
+    }
+
+    &__title-letters {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-55%, -50%);
+        font-size: 68px;
+        font-weight: 600;
+        line-height: 88px;
+        letter-spacing: -1px;
+        color: #2E60C0;
+
+        @include before_1024 {
+            font-size: 50px;
+            line-height: 70px;
+        }
+
+        @include before__768 {
+            font-size: 30px;
+            line-height: 45px;
+        }
+
+        @include before__480 {
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+
+    &__box {
+        padding: 60px 0;
+        background: linear-gradient(to right, #EAF1FE 50%, #F7F8FA 50%);
+    }
+
+    &__list {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__flex {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 13px;
+        transition: 0.5s;
+        z-index: 10;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        &--2 {
+            width: 95%;
+
+            @include before__480 {
+                width: 100%;
+            }
+        }
+
+        &--3 {
+            width: 90%;
+
+            @include before__480 {
+                width: 100%;
+            }
+        }
+
+        &--4 {
+            width: 85%;
+
+            @include before__480 {
+                width: 100%;
+            }
+        }
+
+        &--5 {
+            width: 80%;
+
+            @include before__480 {
+                width: 100%;
+            }
+        }
+
+        &--6 {
+            width: 75%;
+
+            @include before__480 {
+                width: 100%;
+            }
+        }
+
+    }
+
+    &__el {
+        display: flex;
+        align-items: center;
+        width: 50%;
+        padding: 21px 68px 21px 30px;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 23px;
+        letter-spacing: -1px;
+        background-color: #2E60C0;
+        border-radius: 24px 0 0 24px;
+        color: #ffffff;
+
+        @include before_1024 {
+            padding: 15px 35px 15px 20px;
+            font-size: 14px;
+            line-height: 16px;
+        }
+
+        @include before_1024 {
+            //padding: 15px 35px 15px 20px;
+            font-size: 12px;
+            line-height: 14px;
+        }
+
+        &--other {
+            padding: 21px 30px 21px 68px;
+            background-color: #FFFFFF;
+            border-radius: 0 24px 24px 0;
+            color: #2C2C2C;
+
+            @include before_1024 {
+                padding: 15px 20px 15px 35px;
+            }
+        }
+    }
+
+    &__circle {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 88px;
+        height: 88px;
+        background-color: #ffffff;
+        border-radius: 50%;
+        box-shadow: 0 4px 12px 0 #1F149E14;
+        z-index: 10;
+
+        @include before_1024 {
+            width: 50px;
+            height: 50px;
+        }
+
+        @include before__768 {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    &__icon {
+
+        @include before_1024 {
+            width: 25px;
+            height: 25px;
+        }
+
+        @include before__768 {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    &__strip {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 48px;
+        height: calc(100% - 48px);
+        background-color: #ffffff;
+        box-shadow: 0 4px 12px 0 #1F149E14;
+        z-index: 5;
+
+        @include before_1024 {
+            width: 40px;
+        }
+    }
+}
