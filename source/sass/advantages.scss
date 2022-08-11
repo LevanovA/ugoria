@@ -1,6 +1,6 @@
 .advantages {
     margin-bottom: 80px;
-    background: linear-gradient(to right, #EAF1FE 50%, #F7F8FA 50%);
+    background: linear-gradient(to right, #FFFFFF 50%, #EAF1FE 50%);
 
     &__title {
         position: relative;
@@ -20,7 +20,7 @@
         line-height: 31px;
         letter-spacing: -1px;
         text-align: center;
-        color: #2E60C0;
+        color: #E7266B;
 
         @include before_1024 {
             font-size: 20px;
@@ -55,7 +55,7 @@
         font-weight: 600;
         line-height: 88px;
         letter-spacing: -1px;
-        color: #2E60C0;
+        color: #E7266B;
 
         @include before_1024 {
             font-size: 50px;
@@ -75,7 +75,7 @@
 
     &__box {
         padding: 60px 0;
-        background: linear-gradient(to right, #EAF1FE 50%, #F7F8FA 50%);
+        background: linear-gradient(to right, #FFFFFF 50%, #EAF1FE 50%);
     }
 
     &__list {
@@ -149,7 +149,7 @@
         font-weight: 500;
         line-height: 23px;
         letter-spacing: -1px;
-        background-color: #2E60C0;
+        background-color: #E7266B;
         border-radius: 24px 0 0 24px;
         color: #ffffff;
 
