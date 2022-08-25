@@ -6,7 +6,7 @@
     background-color: transparent;
     cursor: pointer;
     text-decoration: none;
-    border-bottom: 1px solid $second-c;
+    border-bottom: 1px solid #e7266b;
     transition: 0.5s;
 
     &:hover {
@@ -18,7 +18,7 @@
         font-weight: 600;
         font-size: 16px;
         line-height: 22px;
-        color: $second-c;
+        color: #e7266b;
 
         @include before__768 {
             font-size: 14px;
