@@ -12,11 +12,11 @@
     transition: 0.5s;
     z-index: 103;
 
-    @include before__768 {
-        top: 95px;
-        height: calc(100% - 95px);
-        z-index: 100;
-    }
+    //@include before__768 {
+    //    top: 95px;
+    //    height: calc(100% - 95px);
+    //    z-index: 100;
+    //}
 
     &--active {
         opacity: 1;
